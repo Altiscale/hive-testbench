@@ -15,6 +15,7 @@ my $SCRIPT_PATH = dirname( __FILE__ );
 dieWithUsage("one or more parameters not defined") unless @ARGV >= 1;
 my $suite = shift;
 my $scale = shift || 2;
+my $settings = shift || "testbench.settings";
 dieWithUsage("suite name required") unless $suite eq "tpcds" or $suite eq "tpch";
 
 chdir $SCRIPT_PATH;
@@ -30,10 +31,13 @@ my $db = {
 	'tpch' => "tpch_flat_orc_$scale"
 };
 
+open FILE, ">runSuite-${db}-${settings}.csv" or die;
+
 print "filename,status,time,rows\n";
+print FILE "filename,status,time,rows\n";
 for my $query ( @queries ) {
 	my $logname = "$query.log";
-	my $cmd="echo 'use $db->{${suite}}; source $query;' | hive -i testbench.settings 2>&1  | tee $query.log";
+	my $cmd="echo 'use $db->{${suite}}; source $query;' | hive -i $settings 2>&1  | tee $query.log";
 #	my $cmd="cat $query.log";
 	#print $cmd ; exit;
 	
@@ -47,14 +51,18 @@ for my $query ( @queries ) {
 	foreach my $line ( @hiveoutput ) {
 		if( $line =~ /Time taken:\s+([\d\.]+)\s+seconds,\s+Fetched:\s+(\d+)\s+row/ ) {
 			print "$query,success,$hiveTime,$2\n"; 
+			print FILE "$query,success,$hiveTime,$2\n"; 
 		} elsif( 
 			$line =~ /^FAILED: /
 			# || /Task failed!/ 
 			) {
 			print "$query,failed,$hiveTime\n"; 
+			print FILE "$query,failed,$hiveTime\n"; 
 		} # end if
 	} # end while
 } # end for
+
+close FILE;
 
 
 sub dieWithUsage(;$) {
@@ -66,7 +74,7 @@ sub dieWithUsage(;$) {
 
 	print STDERR <<USAGE;
 ${err}Usage:
-	perl ${SCRIPT_NAME} [tpcds|tpch] [scale]
+	perl ${SCRIPT_NAME} [tpcds|tpch] [scale] [settings-file]
 
 Description:
 	This script runs the sample queries and outputs a CSV file of the time it took each query to run.  Also, all hive output is kept as a log file named 'queryXX.sql.log' for each query file of the form 'queryXX.sql'. Defaults to scale of 2.
