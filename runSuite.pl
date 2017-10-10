@@ -18,6 +18,11 @@ my $scale = shift || 2;
 my $settings = shift || "testbench.settings";
 dieWithUsage("suite name required") unless $suite eq "tpcds" or $suite eq "tpch";
 
+my $HIVE="hive";
+if(exists $ENV{HIVE_HOME}) {
+ $HIVE="$ENV{HIVE_HOME}/bin/hive";
+}
+
 chdir $SCRIPT_PATH;
 if( $suite eq 'tpcds' ) {
 	chdir "sample-queries-tpcds";
@@ -31,13 +36,13 @@ my $db = {
 	'tpch' => "tpch_flat_orc_$scale"
 };
 
-open FILE, ">runSuite-${db}-${settings}.csv" or die;
+open FILE, ">runSuite-" . $db->{${suite}} . "-${settings}.csv" or die;
 
 print "filename,status,time,rows\n";
 print FILE "filename,status,time,rows\n";
 for my $query ( @queries ) {
 	my $logname = "$query.log";
-	my $cmd="echo 'use $db->{${suite}}; source $query;' | hive -i $settings 2>&1  | tee $query.log";
+	my $cmd="echo 'use $db->{${suite}}; source $query;' | $HIVE -i $settings 2>&1  | tee $query.log";
 #	my $cmd="cat $query.log";
 	#print $cmd ; exit;
 	
