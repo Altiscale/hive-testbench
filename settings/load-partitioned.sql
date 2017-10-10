@@ -31,3 +31,9 @@ set hive.tez.min.partition.factor=0.01;
 set mapreduce.reduce.memory.mb=4096;
 set mapreduce.reduce.java.opts=-Xmx3686m;
 
+set hive.tez.container.size=4096;
+set hive.tez.java.opts=-Xmx3800m;
+set tez.am.resource.memory.mb=8000;
+set tez.am.launch.cmd-opts=-Xmx6800m;
+
+set hive.execution.engine=mr;
