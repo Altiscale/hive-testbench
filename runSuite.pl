@@ -22,6 +22,9 @@ my $HIVE="hive";
 if(exists $ENV{HIVE_HOME}) {
  $HIVE="$ENV{HIVE_HOME}/bin/hive";
 }
+if(exists $ENV{BEELINE}) {
+ $HIVE=$ENV{BEELINE};
+}
 
 chdir $SCRIPT_PATH;
 if( $suite eq 'tpcds' ) {
