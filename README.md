@@ -88,7 +88,7 @@ Mods
 Added new command line options to runSuite.pl so that it support more test configurations
 
 usage:
-runSuite.pl [runid] [tpcds|tpch] [scale] [settings-file] [stream-order] [hiveserver:port]
+`runSuite.pl [runid] [tpcds|tpch] [scale] [settings-file] [stream-order] [hiveserver:port]`
 
 Example:
 ```
