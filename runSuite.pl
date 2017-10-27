@@ -91,14 +91,14 @@ for my $query_number ( @streamorder ) {
         my $success = 0;
 	foreach my $line ( @hiveoutput ) {
 		if ( $client eq 'beeline' ) {
-			if( $line =~ /^(\d+) rows? selected \(([\d\.]+) seconds\)/ ) {
+			if( $line =~ /^([\d+,]+) rows? selected \(([\d\.]+) seconds\)/ ) {
 				print "$query_number,success,$2,$1\n";
 				print FILE "$query_number,success,$2,$1\n";
 				$success = 1;
 			}
 		}
 		elsif ( $client eq 'hive' ) {
-			if( $line =~ /Time taken:\s+([\d\.]+)\s+seconds,\s+Fetched:\s+(\d+)\s+row/ ) {
+			if( $line =~ /Time taken:\s+([\d\.]+)\s+seconds,\s+Fetched:\s+([\d,]+)\s+row/ ) {
 				print "$query_number,success,$1,$2\n"; 
 				print FILE "$query_number,success,$1,$2\n"; 
 				$success = 1;
