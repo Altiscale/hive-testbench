@@ -12,7 +12,8 @@ my $SCRIPT_NAME = basename( __FILE__ );
 my $SCRIPT_PATH = dirname( __FILE__ );
 
 # MAIN
-dieWithUsage("one or more parameters not defined") unless @ARGV >= 4;
+dieWithUsage("one or more parameters not defined") unless @ARGV >= 5;
+my $runid = shift;
 my $suite = shift;
 my $scale = shift;
 my $settings = shift;
@@ -34,7 +35,8 @@ if(defined $hiveserver_hostport ) {
 
 chdir $SCRIPT_PATH;
 mkdir "logs" unless (-d "logs");
-my $LOGDIR="logs";
+mkdir "logs/$runid" unless (-d "logs/$runid");
+my $LOGDIR="logs/$runid";
 my $queryset_dir;
 if( $suite eq 'tpcds' ) {
 	$queryset_dir = "sample-queries-tpcds";
@@ -49,7 +51,7 @@ my $db = {
 	'tpch' => "tpch_flat_orc_$scale"
 };
 
-open FILE, ">runSuite-" . $db->{${suite}} . "-" . basename($settings) . ".csv" or die $!;
+open FILE, ">${runid}-" . $db->{${suite}} . "-" . basename($settings) . ".csv" or die $!;
 
 print "filename,status,time,rows\n";
 print FILE "filename,status,time,rows\n";
@@ -89,7 +91,7 @@ for my $query_number ( @streamorder ) {
         my $success = 0;
 	foreach my $line ( @hiveoutput ) {
 		if ( $client eq 'beeline' ) {
-			if( $line =~ /(\d+) rows? selected \(([\d\.]+) seconds\)/ ) {
+			if( $line =~ /^(\d+) rows? selected \(([\d\.]+) seconds\)/ ) {
 				print "$query_number,success,$2,$1\n";
 				print FILE "$query_number,success,$2,$1\n";
 				$success = 1;
@@ -121,7 +123,7 @@ sub dieWithUsage(;$) {
 
 	print STDERR <<USAGE;
 ${err}Usage:
-	perl ${SCRIPT_NAME} [tpcds|tpch] [scale] [settings-file] [stream-order] [hiveserver:port]
+	perl ${SCRIPT_NAME} [runid] [tpcds|tpch] [scale] [settings-file] [stream-order] [hiveserver:port]
 
 Description:
 	This script runs the sample queries and outputs a CSV file of the time it took each query to run.  Also, all hive output is kept as a log file named 'queryXX.sql.log' for each query file of the form 'queryXX.sql'. Defaults to scale of 2.
