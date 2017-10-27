@@ -83,6 +83,27 @@ All of these steps should be carried out on your Hadoop cluster.
   	hive> source tpch_query1.sql;
   	```
 
+Mods
+====
+Added new command line options to runSuite.pl so that it support more test configurations
+
+usage:
+runSuite.pl [runid] [tpcds|tpch] [scale] [settings-file] [stream-order] [hiveserver:port]
+
+Example:
+```
+./runSuite.pl spark tpcds 1000 sample-queries-tpcds/null.settings streams-tpcds/hive1-stream0.txt spark-thriftserer.altiscale.com:10015
+```
+* If you specify the hiveserver host & port option, it will use beeline to connect to the hiveserver2.  
+* runid is an arbitrary string so multiple runs don't overwrite the log files
+* Query logs are written into folder `logs/<runid>`
+* you can pass into a settings file which is passed to hive to initialize the session with tuning parameters
+* You can order the query to be executed in a specific order using the stream-order which contains a list of query numbers from 1 to 100, one on each line
+* Query duration and rows fetched are stored into a CSV file named using the convention: `<runid>-tpcds_bin_partitioned_<fileformat>_<scalefactor>-<settings>.csv`
+
+
+
+
 Feedback
 ========
 
