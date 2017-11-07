@@ -1,0 +1,503 @@
+<?xml version=1.0?>
+<allocations>
+  <pool name="bench001">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench002">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench003">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench004">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench005">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench006">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench007">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench008">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench009">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench010">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench011">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench012">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench013">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench014">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench015">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench016">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench017">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench018">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench019">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench020">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench021">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench022">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench023">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench024">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench025">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench026">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench027">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench028">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench029">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench030">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench031">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench032">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench033">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench034">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench035">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench036">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench037">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench038">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench039">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench040">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench041">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench042">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench043">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench044">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench045">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench046">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench047">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench048">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench049">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench050">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench051">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench052">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench053">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench054">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench055">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench056">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench057">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench058">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench059">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench060">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench061">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench062">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench063">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench064">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench065">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench066">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench067">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench068">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench069">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench070">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench071">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench072">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench073">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench074">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench075">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench076">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench077">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench078">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench079">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench080">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench081">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench082">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench083">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench084">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench085">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench086">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench087">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench088">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench089">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench090">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench091">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench092">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench093">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench094">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench095">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench096">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench097">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench098">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench099">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+  <pool name="bench100">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
+</allocations>

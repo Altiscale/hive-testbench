@@ -1,0 +1,5 @@
+  <pool name="USER">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>10</minShare>
+  </pool>
