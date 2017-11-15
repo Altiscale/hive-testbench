@@ -73,3 +73,4 @@ with year_total as (
 limit 100;
 
 -- end query 1 in stream 0 using template query11.tpl
+q!;
