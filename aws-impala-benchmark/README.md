@@ -23,6 +23,7 @@ hadoop fs -ls -h -R /data/
 The following table shows the row count for each table (in millions of rows). The GB value indicates the size of the text file of each table. Within an input class, the books, customers, and transactions tables always have the same size.
 
 | Input Class (size of each table) | Books table (Million Rows) | Customers table (Million Rows) | Transactions table (Million Rows) |
+| -------------------------------- | -------------------------- | ------------------------------ | --------------------------------- |
 | 4GB | 63|53| 87|
 |8GB | 	125 | 106 | 171|
 |16GB | 249 | 210 | 334|
