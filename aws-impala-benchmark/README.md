@@ -70,3 +70,10 @@ LOCATION '/data/transactions/';
 
 * 4 different queries: Q1, Q2, Q3 and Q4
 
+* Run the benchmark on spark/hive thrift server
+```
+beeline -u jdbc:hive2://200-01-06.sc1.verticloud.com:10015/aws_impala_benchmark -n arun -p arun -f q1.sql
+beeline -u jdbc:hive2://200-01-06.sc1.verticloud.com:10015/aws_impala_benchmark -n arun -p arun -f q2.sql
+beeline -u jdbc:hive2://200-01-06.sc1.verticloud.com:10015/aws_impala_benchmark -n arun -p arun -f q3.sql
+beeline -u jdbc:hive2://200-01-06.sc1.verticloud.com:10015/aws_impala_benchmark -n arun -p arun -f q4.sql
+```
