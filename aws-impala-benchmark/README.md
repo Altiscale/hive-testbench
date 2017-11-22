@@ -34,6 +34,8 @@ The following table shows the row count for each table (in millions of rows). Th
 * Database schema
 
 ```
+CREATE DATABASE IF NOT EXISTS aws_impala_benchmark;
+USE aws_impala_benchmark;
 CREATE EXTERNAL TABLE books(
   id BIGINT,
   isbn STRING,
